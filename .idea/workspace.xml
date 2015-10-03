@@ -4,7 +4,7 @@
     <list default="true" id="590100ec-2ef8-4416-af84-2a90d547cffc" name="Default" comment="" />
     <ignored path="home.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="D:/dev/projects/untitled/.idea/workspace.xml" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1443909086630" ignored="false" />
+    <file path="D:/dev/projects/untitled/.idea/workspace.xml" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1443909388259" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +63,7 @@
     <favorites_list name="home" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PPPP.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PPPP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="173" selection-end="173" vertical-scroll-proportion="0.17221418">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
