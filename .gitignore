@@ -1,2 +1,4 @@
-home.iml
-*.idea
+*.iml
+*.class
+.idea/
+out/
