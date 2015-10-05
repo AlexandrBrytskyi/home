@@ -58,4 +58,8 @@ public class CommandFinder {
         return res;
     }
 
+    public String currLocation(){
+        return fileHelper.getCurrentLocation().getAbsolutePath();
+    }
+
 }

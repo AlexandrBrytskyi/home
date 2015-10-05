@@ -24,6 +24,7 @@ public class CommandLine {
     private void init() {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter command");
+        System.out.print(finder.currLocation());
         finder.definCommand(s.nextLine());
         init();
     }

@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class FileHelper {
     //reciever
     //here is a logic of all the commands
-
+    private File currentLocation = new File("D:/");
 
     public FileHelper() {
 
@@ -66,6 +66,10 @@ public class FileHelper {
 
         }
 
+    }
+
+    public File getCurrentLocation() {
+        return currentLocation;
     }
 
     private void showCommandHelp(String command, String absPath) {
