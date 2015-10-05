@@ -1,0 +1,2 @@
+help mkdir:
+command "mkdir <name>" creates a directory in the current directory if it is possible;

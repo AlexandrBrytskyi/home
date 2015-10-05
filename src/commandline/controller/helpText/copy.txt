@@ -1,0 +1,2 @@
+help copy:
+command "copy <file> <destination folder>" copies file into the destination folder;

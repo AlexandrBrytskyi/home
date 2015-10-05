@@ -1,0 +1,3 @@
+fc help:
+command "fc <file1> <file2>" compares the content of files;
+use name if file are in current directory or absolute path;

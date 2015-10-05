@@ -6,10 +6,25 @@
     <ignored path=".idea/workspace.xml" />
     <file path="D:/dev/projects/untitled/.idea/workspace.xml" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1443909388259" ignored="false" />
     <file path="/Command.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444068510444" ignored="false" />
-    <file path="/CommandLine.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444068680588" ignored="false" />
+    <file path="/CommandLine.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444084303898" ignored="false" />
     <file path="/Reciever.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444066958897" ignored="false" />
-    <file path="/CommandFinder.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444068458546" ignored="false" />
+    <file path="/CommandFinder.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444085900412" ignored="false" />
     <file path="/File Header.txt.ft" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444068638562" ignored="false" />
+    <file path="/FileHelper.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444086133226" ignored="false" />
+    <file path="/Init.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444072377832" ignored="false" />
+    <file path="/cd.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444072771287" ignored="false" />
+    <file path="/find.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444072961436" ignored="false" />
+    <file path="/dir" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073035297" ignored="false" />
+    <file path="/type.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073166595" ignored="false" />
+    <file path="/del" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073276951" ignored="false" />
+    <file path="/rd.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073412867" ignored="false" />
+    <file path="/mkdir.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073485915" ignored="false" />
+    <file path="/touch.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073681003" ignored="false" />
+    <file path="/tree.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444073808402" ignored="false" />
+    <file path="/copy.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444074043036" ignored="false" />
+    <file path="/fc.txt" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444074131702" ignored="false" />
+    <file path="/HelpCommand.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444079317597" ignored="false" />
+    <file path="/CommandStarter.java" changelist="590100ec-2ef8-4416-af84-2a90d547cffc" time="1444083929770" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +75,24 @@
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/commandline/controller/FileHelper.java" line="70" class="commandline.controller.FileHelper" package="commandline.controller">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -72,9 +105,20 @@
       <file leaf-file-name="CommandFinder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commandline/controller/CommandFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="105" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1444068640255" expanded="true" signature="435:1057" placeholder="..." />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandStarter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commandline/controller/CommandStarter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,25 +127,47 @@
       <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commandline/model/commands/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+            <state line="15" column="19" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileHelper.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HelpCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commandline/model/commands/HelpCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHelper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/commandline/controller/FileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="84" column="70" selection-start="2816" selection-end="2816" vertical-scroll-proportion="1.556044">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandLine.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CommandLine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commandline/view/CommandLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="471" selection-end="471" vertical-scroll-proportion="0.44283646">
+            <state line="26" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Init.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commandline/view/Init.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,17 +183,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/commandline/Command.java" />
-        <option value="$PROJECT_DIR$/src/commandline/CommandLine.java" />
-        <option value="$PROJECT_DIR$/src/commandline/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/commandline/commands/Reciever.java" />
-        <option value="$PROJECT_DIR$/src/commandline/commands/FileHelper.java" />
-        <option value="$PROJECT_DIR$/src/commandline/FileHelper.java" />
-        <option value="$PROJECT_DIR$/src/commandline/controller/FileHelper.java" />
-        <option value="$PROJECT_DIR$/src/commandline/controller/CommandLine.java" />
-        <option value="$PROJECT_DIR$/src/commandline/controller/CommandFinder.java" />
-        <option value="$PROJECT_DIR$/src/commandline/model/commands/Command.java" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/cd.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/find.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/dir" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/type.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/del" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/rd.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/mkdir.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/touch.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/tree.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/copy.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/helpText/fc.txt" />
+        <option value="$PROJECT_DIR$/src/commandline/model/commands/HelpCommand.java" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/CommandStarter.java" />
         <option value="$PROJECT_DIR$/src/commandline/view/CommandLine.java" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/CommandFinder.java" />
+        <option value="$PROJECT_DIR$/src/commandline/controller/FileHelper.java" />
       </list>
     </option>
   </component>
@@ -251,25 +322,104 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commandline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpText" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Init">
+    <configuration default="false" name="FileHelper" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="commandline.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="commandline.controller.FileHelper" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="home" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Init" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="commandline.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="commandline.view.Init" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="home" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -361,7 +511,16 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.FileHelper" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Init" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.Init" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FileHelper" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -396,29 +555,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39888424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -478,34 +638,128 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/commandline/controller/FileHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/type.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+        <state line="2" column="65" selection-start="121" selection-end="121" vertical-scroll-proportion="0.04920405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/commandline/controller/CommandFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/del.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="105" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1444068640255" expanded="true" signature="435:1057" placeholder="..." />
-          </folding>
+        <state line="2" column="55" selection-start="127" selection-end="127" vertical-scroll-proportion="0.04920405">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/commandline/model/commands/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/rd.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+        <state line="2" column="83" selection-start="152" selection-end="152" vertical-scroll-proportion="0.04920405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/mkdir.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.04920405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/touch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="55" selection-start="67" selection-end="67" vertical-scroll-proportion="0.024602026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/copy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.04920405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/fc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="59" selection-start="128" selection-end="128" vertical-scroll-proportion="0.04920405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/helpText/tree.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="62" selection-start="73" selection-end="73" vertical-scroll-proportion="0.024602026">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commandline/view/CommandLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="471" selection-end="471" vertical-scroll-proportion="0.44283646">
+        <state line="26" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/view/Init.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1917" column="0" selection-start="75141" selection-end="75141" vertical-scroll-proportion="0.3325792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/CommandFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/CommandStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/model/commands/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/model/commands/HelpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commandline/controller/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="70" selection-start="2816" selection-end="2816" vertical-scroll-proportion="1.556044">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

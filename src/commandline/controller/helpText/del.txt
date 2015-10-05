@@ -1,0 +1,3 @@
+help del:
+command "del <file>" deletes file if you have rights to do it
+type name of file in current directory or absolute path

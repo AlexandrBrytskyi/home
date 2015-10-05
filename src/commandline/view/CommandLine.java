@@ -2,6 +2,8 @@ package commandline.view;
 
 import commandline.controller.CommandFinder;
 
+import java.util.Scanner;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Alexandr
@@ -13,10 +15,17 @@ public class CommandLine {
     //here is our command line;
     //here must me a method where we say our command and give it to the commandFinder,
 
-    CommandFinder finder;
+    CommandFinder finder = new CommandFinder();
 
     public CommandLine() {
-        this.finder  = new CommandFinder();
+        init();
+    }
+
+    private void init() {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter command");
+        finder.definCommand(s.nextLine());
+        init();
     }
 
 

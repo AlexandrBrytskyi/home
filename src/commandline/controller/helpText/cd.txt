@@ -1,0 +1,5 @@
+cd help:
+changes current directory.
+use "cd .." to go up on one directory;
+use "cd <path>" to set path as current directory;
+use "cd <absolute path>" to change current directory

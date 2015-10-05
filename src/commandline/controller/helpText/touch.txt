@@ -1,0 +1,2 @@
+help touch:
+command "touch <name>" create file in current directory

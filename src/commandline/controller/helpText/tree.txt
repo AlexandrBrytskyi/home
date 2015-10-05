@@ -1,0 +1,2 @@
+help tree:
+command "tree" shows structure of folders from current folder;

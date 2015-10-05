@@ -1,0 +1,2 @@
+help dir:
+command dir shows the content of current directory

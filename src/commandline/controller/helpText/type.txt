@@ -1,0 +1,3 @@
+help type:
+command "type <file>" shows the file content
+can use absolute path or just a name of file in current directory

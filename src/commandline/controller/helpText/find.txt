@@ -1,0 +1,3 @@
+help find:
+use find to get absolute path to file if it exists
+you'll see message if there is no such file

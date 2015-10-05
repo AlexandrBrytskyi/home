@@ -1,0 +1,3 @@
+help rd:
+command "rd <directory>" deletes directory and it's content
+use absolute path or just a name if directory to be deleted is in current directory

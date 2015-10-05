@@ -1,5 +1,8 @@
 package commandline.controller;
 
+import commandline.model.commands.Command;
+import commandline.model.commands.HelpCommand;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Alexandr
@@ -8,19 +11,51 @@ package commandline.controller;
  * To change this template use File | Settings | File Templates.
  */
 public class CommandFinder {
-    // this class must be like invoker
-    //invoker has all the methods are implemented by Command (model)
-    //invoker must define is real command or not, then if all is ok it runs a command (run method execute)
 
-//    +       - show all available commands        help
-//    +       - changeCurrentLocation              cd
-//    +       - find file(dir)                     find
-//    +       - show directoryContent              dir
-//    +       - show file (content)                type
-//    +       - delete file or dir                 del , rd
-//    +       - create dir                         mkdir
-//    +       - create file                        ? )))
-//            +       - show folder structure              tree
-//    +       - copy file                          copy
-//    +       - compare content of files           fc
+    FileHelper fileHelper = new FileHelper();
+
+    //this class has  to define command from comandline and start it
+
+    CommandStarter commandStarter = new CommandStarter();
+
+
+    // stroka is String which method get after pushing enter in command line
+    public void definCommand(String stroka) {
+        String atribute1 = null;
+        String atribute2 = null;
+        String comm = toSpaceWord(stroka);
+        stroka = stroka.substring(comm.length());
+        if (stroka.length() >= 2) {
+            atribute1 = toSpaceWord(stroka);
+            stroka = stroka.substring(atribute1.length()+1);
+        }
+        if (stroka.length() >= 2) {
+            atribute2 = toSpaceWord(stroka);
+
+        }
+
+        doCommand(comm, atribute1, atribute2);
+    }
+
+    private void doCommand(String command, String atrib1, String atrib2) {
+        if (command.equals("help")) {
+            commandStarter.runHelpCommand(new HelpCommand(fileHelper, atrib1));
+        }
+
+
+    }
+
+
+    private String toSpaceWord(String stroka) {
+        String res = "";
+        if (stroka.length() <= 1) return null;
+        for (int i = 0; i < stroka.length(); i++) {
+            if (stroka.charAt(0) == ' ' && i == 0) i++;
+            if (stroka.charAt(i) == ' ') return res;
+            res = res + stroka.charAt(i);
+
+        }
+        return res;
+    }
+
 }
