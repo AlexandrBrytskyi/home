@@ -1,5 +1,6 @@
 package commandline.controller;
 
+import commandline.model.commands.CDCommand;
 import commandline.model.commands.Command;
 import commandline.model.commands.HelpCommand;
 
@@ -13,10 +14,16 @@ public class CommandStarter {
     //
 
     Command helpCommand;
+    Command cdCommand;
 
     public void runHelpCommand(HelpCommand helpCommand) {
         this.helpCommand = helpCommand;
         helpCommand.execute();
+    }
+
+    public void runCDCommand(CDCommand cdCommand) {
+        this.cdCommand = cdCommand;
+        cdCommand.execute();
     }
 
 }

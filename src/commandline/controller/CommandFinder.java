@@ -1,5 +1,6 @@
 package commandline.controller;
 
+import commandline.model.commands.CDCommand;
 import commandline.model.commands.Command;
 import commandline.model.commands.HelpCommand;
 
@@ -27,7 +28,7 @@ public class CommandFinder {
         stroka = stroka.substring(comm.length());
         if (stroka.length() >= 2) {
             atribute1 = toSpaceWord(stroka);
-            stroka = stroka.substring(atribute1.length()+1);
+            stroka = stroka.substring(atribute1.length() + 1);
         }
         if (stroka.length() >= 2) {
             atribute2 = toSpaceWord(stroka);
@@ -41,7 +42,9 @@ public class CommandFinder {
         if (command.equals("help")) {
             commandStarter.runHelpCommand(new HelpCommand(fileHelper, atrib1));
         }
-
+        if (command.equals("cd")) {
+            commandStarter.runCDCommand(new CDCommand(fileHelper, atrib1));
+        }
 
     }
 
@@ -58,7 +61,7 @@ public class CommandFinder {
         return res;
     }
 
-    public String currLocation(){
+    public String currLocation() {
         return fileHelper.getCurrentLocation().getAbsolutePath();
     }
 

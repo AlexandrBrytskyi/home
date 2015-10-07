@@ -43,6 +43,7 @@ public class FileHelper {
         }
     }
 
+
     private void showAllHelp(String absPath) {
         // show all commands help one after another
         String abPath = absPath;
@@ -72,6 +73,36 @@ public class FileHelper {
         return currentLocation;
     }
 
+    public void changeCurrLocation(String atribute) {
+        if (atribute.equals("..")) {
+            if (currentLocation.getAbsolutePath().length() > 3) {
+                currentLocation = new File(currentLocation.getParent());
+                return;
+            }
+        } else {
+            if (atribute.charAt(1) == ':') {
+                if (atribute.charAt(2) != '/') {
+                    System.out.println("wrong path!");
+                    return;
+                }
+                File newPath = new File(atribute);
+                if (newPath.exists() && newPath.isDirectory()) {
+                    currentLocation = newPath;
+                    return;
+                }
+            } else {
+                File newPath = new File(currentLocation + atribute);
+                if (newPath.exists() && newPath.isDirectory()) {
+                    currentLocation = newPath;
+                    return;
+                }
+            }
+        }
+        System.out.println("wrong path");
+        return;
+
+    }
+
     private void showCommandHelp(String command, String absPath) {
         //look in the directory if it contains info about such command and show it, else say that wrong command
         String abPath = absPath;
@@ -86,7 +117,7 @@ public class FileHelper {
         }
         if (contains) {
             try {
-                Reader r = new FileReader(abPath + "/" + command+".txt");
+                Reader r = new FileReader(abPath + "/" + command + ".txt");
                 String res = "";
                 int a = 0;
                 while ((a = r.read()) != -1) {
