@@ -2,6 +2,7 @@ package commandline.controller;
 
 import commandline.model.commands.CDCommand;
 import commandline.model.commands.Command;
+import commandline.model.commands.FindCommand;
 import commandline.model.commands.HelpCommand;
 
 /**
@@ -15,6 +16,8 @@ public class CommandStarter {
 
     Command helpCommand;
     Command cdCommand;
+    Command findCommand;
+
 
     public void runHelpCommand(HelpCommand helpCommand) {
         this.helpCommand = helpCommand;
@@ -24,6 +27,11 @@ public class CommandStarter {
     public void runCDCommand(CDCommand cdCommand) {
         this.cdCommand = cdCommand;
         cdCommand.execute();
+    }
+
+    public void runFindCommand(FindCommand findCommand) {
+        this.findCommand = findCommand;
+        findCommand.execute();
     }
 
 }

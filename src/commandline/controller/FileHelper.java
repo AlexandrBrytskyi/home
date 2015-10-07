@@ -1,5 +1,7 @@
 package commandline.controller;
 
+import commandline.controller.helperUtilies.MyFileSearch;
+
 import java.io.*;
 import java.util.HashMap;
 
@@ -73,35 +75,6 @@ public class FileHelper {
         return currentLocation;
     }
 
-    public void changeCurrLocation(String atribute) {
-        if (atribute.equals("..")) {
-            if (currentLocation.getAbsolutePath().length() > 3) {
-                currentLocation = new File(currentLocation.getParent());
-                return;
-            }
-        } else {
-            if (atribute.charAt(1) == ':') {
-                if (atribute.charAt(2) != '/') {
-                    System.out.println("wrong path!");
-                    return;
-                }
-                File newPath = new File(atribute);
-                if (newPath.exists() && newPath.isDirectory()) {
-                    currentLocation = newPath;
-                    return;
-                }
-            } else {
-                File newPath = new File(currentLocation + atribute);
-                if (newPath.exists() && newPath.isDirectory()) {
-                    currentLocation = newPath;
-                    return;
-                }
-            }
-        }
-        System.out.println("wrong path");
-        return;
-
-    }
 
     private void showCommandHelp(String command, String absPath) {
         //look in the directory if it contains info about such command and show it, else say that wrong command
@@ -133,4 +106,59 @@ public class FileHelper {
             System.out.println("Wrong command, try again");
         }
     }
+
+    public void changeCurrLocation(String atribute) {
+        if (locationController(atribute) != null) currentLocation = locationController(atribute);
+    }
+
+
+    // location controller gives possibility to look if the file or directory exists to
+    // do something with them
+    private File locationController(String atribute) {
+        File location = new File(currentLocation.getAbsolutePath());
+        if (atribute.equals("..")) {
+            if (location.getAbsolutePath().length() > 3) {
+                location = new File(location.getParent());
+                return location;
+            }
+        } else {
+            if (atribute.charAt(1) == ':') {
+                if (atribute.charAt(2) != '/') {
+                    System.out.println("wrong path!");
+                    return null;
+                }
+                File newPath = new File(atribute);
+                if (newPath.exists() && newPath.isDirectory()) {
+                    location = newPath;
+                    return location;
+                }
+            } else {
+                File newPath = new File(location + atribute);
+                if (newPath.exists() && newPath.isDirectory()) {
+                    location = newPath;
+                    return location;
+                }
+            }
+        }
+        System.out.println("wrong path");
+        return null;
+
+    }
+
+
+    public void find(String objtosearch, String atr2) {
+        if (objtosearch != null) {
+            if (atr2.equals(null)) {
+                new MyFileSearch(objtosearch, currentLocation.getAbsolutePath());
+            } else {
+                if (locationController(atr2) != null) {
+                    new MyFileSearch(objtosearch, locationController(atr2).getAbsolutePath());
+                } else {
+                    System.out.println("Chek the path you enter");
+                }
+            }
+        }
+
+    }
+
 }

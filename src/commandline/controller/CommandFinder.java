@@ -2,6 +2,7 @@ package commandline.controller;
 
 import commandline.model.commands.CDCommand;
 import commandline.model.commands.Command;
+import commandline.model.commands.FindCommand;
 import commandline.model.commands.HelpCommand;
 
 /**
@@ -44,6 +45,9 @@ public class CommandFinder {
         }
         if (command.equals("cd")) {
             commandStarter.runCDCommand(new CDCommand(fileHelper, atrib1));
+        }
+        if (command.equals("find")) {
+            commandStarter.runFindCommand(new FindCommand(fileHelper, atrib1, atrib2));
         }
 
     }
