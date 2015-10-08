@@ -172,4 +172,54 @@ public class FileHelper {
         }
     }
 
+    //type command realisation
+    public void type(String atribute) {
+        File curr = fileController(atribute);
+        if (curr != null) {
+            if (!curr.isDirectory()) {
+                try {
+                    FileReader r = new FileReader(curr);
+                    String res = "";
+                    int ss = 0;
+                    while ((ss = r.read()) != -1) {
+                        res += (char)ss;
+                    }
+                    System.out.println(res);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                System.out.println("it is directory, use dir to look trough content of diretory");
+            }
+        }
+    }
+
+    private File fileController(String atribute) {
+        File location = new File(currentLocation.getAbsolutePath());
+
+        if (atribute.charAt(1) == ':') {
+            if (atribute.charAt(2) != '/') {
+                System.out.println("wrong path!");
+                return null;
+            }
+            File newPath = new File(atribute);
+            if (newPath.exists() && newPath.isFile()) {
+                location = newPath;
+                return location;
+            }
+        } else {
+            File newPath = new File(location + atribute);
+            if (newPath.exists() && newPath.isFile()) {
+                location = newPath;
+                return location;
+            }
+        }
+
+        System.out.println("wrong path");
+        return null;
+
+    }
+
 }

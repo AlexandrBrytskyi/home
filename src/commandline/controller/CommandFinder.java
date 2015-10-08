@@ -49,6 +49,9 @@ public class CommandFinder {
         if (command.equals("dir")) {
             commandStarter.runDirCommand(new DirCommand(fileHelper));
         }
+        if (command.equals("type")) {
+            commandStarter.runTypeCommand(new TypeCommand(fileHelper, atrib1));
+        }
 
     }
 

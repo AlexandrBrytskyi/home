@@ -15,6 +15,7 @@ public class CommandStarter {
     Command cdCommand;
     Command findCommand;
     Command dirCommand;
+    Command typeCommand;
 
     public void runHelpCommand(HelpCommand helpCommand) {
         this.helpCommand = helpCommand;
@@ -34,6 +35,11 @@ public class CommandStarter {
     public void runDirCommand(DirCommand dirCommand) {
         this.dirCommand = dirCommand;
         dirCommand.execute();
+    }
+
+    public void runTypeCommand(TypeCommand typeCommand){
+        this.typeCommand = typeCommand;
+        typeCommand.execute();
     }
 
 }
