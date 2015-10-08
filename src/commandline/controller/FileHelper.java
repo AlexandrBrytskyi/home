@@ -242,4 +242,32 @@ public class FileHelper {
         }
     }
 
+
+    //realisation mkdir
+    public void mkdir(String name) {
+        if (name.contains(".")) {
+            System.out.println("cant make");
+            return;
+        }
+        File newDirec = new File(currentLocation + name);
+        if (newDirec.mkdir()) {
+            System.out.println("success");
+        } else {
+            System.out.println("Cant make such directory");
+        }
+    }
+
+    //realisation touch
+    public void touch(String name) {
+        File newFile = new File(currentLocation + name);
+        try {
+            newFile.createNewFile();
+            System.out.println("success");
+        } catch (IOException e) {
+            System.out.println("Cant make such directory");
+            e.printStackTrace();
+        }
+    }
+
+
 }

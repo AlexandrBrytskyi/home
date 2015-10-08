@@ -58,6 +58,12 @@ public class CommandFinder {
         if (command.equals("rd")) {
             commandStarter.runRDCommand(new RDCommand(fileHelper, atrib1));
         }
+        if (command.equals("mkdir")) {
+            commandStarter.runMkdirCommand(new MkdirCommand(fileHelper, atrib1));
+        }
+        if (command.equals("touch")) {
+            commandStarter.runTouchCommand(new TouchCommand(fileHelper, atrib1));
+        }
 
     }
 

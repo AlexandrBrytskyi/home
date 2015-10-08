@@ -18,6 +18,9 @@ public class CommandStarter {
     Command typeCommand;
     Command delCommand;
     Command rdCommand;
+    Command mkdirCommand;
+    Command touchCommand;
+
 
     public void runHelpCommand(HelpCommand helpCommand) {
         this.helpCommand = helpCommand;
@@ -54,6 +57,14 @@ public class CommandStarter {
         delCommand.execute();
     }
 
+    public void runMkdirCommand(MkdirCommand mkdirCommand) {
+        this.mkdirCommand = mkdirCommand;
+        mkdirCommand.execute();
+    }
 
+    public void runTouchCommand(TouchCommand touchCommand) {
+        this.touchCommand = touchCommand;
+        touchCommand.execute();
+    }
 
 }
