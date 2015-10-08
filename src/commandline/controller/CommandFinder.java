@@ -1,9 +1,6 @@
 package commandline.controller;
 
-import commandline.model.commands.CDCommand;
-import commandline.model.commands.Command;
-import commandline.model.commands.FindCommand;
-import commandline.model.commands.HelpCommand;
+import commandline.model.commands.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -48,6 +45,9 @@ public class CommandFinder {
         }
         if (command.equals("find")) {
             commandStarter.runFindCommand(new FindCommand(fileHelper, atrib1, atrib2));
+        }
+        if (command.equals("dir")) {
+            commandStarter.runDirCommand(new DirCommand(fileHelper));
         }
 
     }

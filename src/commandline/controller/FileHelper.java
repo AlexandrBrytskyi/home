@@ -145,7 +145,7 @@ public class FileHelper {
 
     }
 
-
+    // realisation of FindCommand
     public void find(String objtosearch, String atr2) {
         if (objtosearch != null) {
             if (atr2.equals(null)) {
@@ -158,7 +158,18 @@ public class FileHelper {
                 }
             }
         }
+    }
 
+    // shows current directory content
+    public void dir() {
+        String[] content = currentLocation.list();
+        if (content.length > 0) {
+            for (String s : content) {
+                System.out.println(s);
+            }
+        } else {
+            System.out.println("Directory is empty");
+        }
     }
 
 }
