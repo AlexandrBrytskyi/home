@@ -52,6 +52,12 @@ public class CommandFinder {
         if (command.equals("type")) {
             commandStarter.runTypeCommand(new TypeCommand(fileHelper, atrib1));
         }
+        if (command.equals("del")) {
+            commandStarter.runDeleteCommand(new DeleteCommand(fileHelper, atrib1));
+        }
+        if (command.equals("rd")) {
+            commandStarter.runRDCommand(new RDCommand(fileHelper, atrib1));
+        }
 
     }
 

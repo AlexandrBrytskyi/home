@@ -182,7 +182,7 @@ public class FileHelper {
                     String res = "";
                     int ss = 0;
                     while ((ss = r.read()) != -1) {
-                        res += (char)ss;
+                        res += (char) ss;
                     }
                     System.out.println(res);
                 } catch (FileNotFoundException e) {
@@ -220,6 +220,26 @@ public class FileHelper {
         System.out.println("wrong path");
         return null;
 
+    }
+
+    //realisation of del command
+    public void delete(String file) {
+        File curr = fileController(file);
+        if (curr != null && curr.canExecute()) {
+            curr.delete();
+        } else {
+            System.out.println("File doesn`t exist or cant delete");
+        }
+    }
+
+    //realisation of rd command
+    public void rd(String path) {
+        File curr = locationController(path);
+        if (curr != null && curr.canExecute()) {
+            curr.delete();
+        } else {
+            System.out.println("Directory doesn`t exist or cant delete");
+        }
     }
 
 }

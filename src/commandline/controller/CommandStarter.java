@@ -16,6 +16,8 @@ public class CommandStarter {
     Command findCommand;
     Command dirCommand;
     Command typeCommand;
+    Command delCommand;
+    Command rdCommand;
 
     public void runHelpCommand(HelpCommand helpCommand) {
         this.helpCommand = helpCommand;
@@ -37,9 +39,21 @@ public class CommandStarter {
         dirCommand.execute();
     }
 
-    public void runTypeCommand(TypeCommand typeCommand){
+    public void runTypeCommand(TypeCommand typeCommand) {
         this.typeCommand = typeCommand;
         typeCommand.execute();
     }
+
+    public void runRDCommand(RDCommand rdCommand) {
+        this.rdCommand = rdCommand;
+        rdCommand.execute();
+    }
+
+    public void runDeleteCommand(DeleteCommand delCommand) {
+        this.delCommand = delCommand;
+        delCommand.execute();
+    }
+
+
 
 }
