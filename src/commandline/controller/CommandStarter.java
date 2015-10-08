@@ -20,6 +20,8 @@ public class CommandStarter {
     Command rdCommand;
     Command mkdirCommand;
     Command touchCommand;
+    Command copyCommand;
+    Command compareCommand;
 
 
     public void runHelpCommand(HelpCommand helpCommand) {
@@ -65,6 +67,16 @@ public class CommandStarter {
     public void runTouchCommand(TouchCommand touchCommand) {
         this.touchCommand = touchCommand;
         touchCommand.execute();
+    }
+
+    public void runCopyCommand(CopyCommand copyCommand) {
+        this.copyCommand = copyCommand;
+        copyCommand.execute();
+    }
+
+    public void runCompareCommand(CompareCommand compareCommand) {
+        this.compareCommand = compareCommand;
+        compareCommand.execute();
     }
 
 }

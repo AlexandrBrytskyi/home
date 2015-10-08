@@ -133,7 +133,7 @@ public class FileHelper {
                     return location;
                 }
             } else {
-                File newPath = new File(location +"/"+ atribute);
+                File newPath = new File(location + "/" + atribute);
                 if (newPath.exists() && newPath.isDirectory()) {
                     location = newPath;
                     return location;
@@ -210,7 +210,7 @@ public class FileHelper {
                 return location;
             }
         } else {
-            File newPath = new File(location +"/" + atribute);
+            File newPath = new File(location + "/" + atribute);
             if (newPath.exists() && newPath.isFile()) {
                 location = newPath;
                 return location;
@@ -271,8 +271,72 @@ public class FileHelper {
 
 
     //copy file  copy
+    public void copyDirectory(String sourceLocationn, String targetLocationn) {
+        File targetLocation = locationController(targetLocationn);
+        File direct = locationController(sourceLocationn);
+        File file = fileController(sourceLocationn);
+        File sourceLocation;
+        if (direct == null) {
+            sourceLocation = file;
+        } else {
+            sourceLocation = direct;
+        }
+
+        if (sourceLocation.isDirectory()) {
+
+            String[] children = sourceLocation.list();
+            for (int i = 0; i < children.length; i++) {
+                copyDirectory(new File(sourceLocation, children[i]).getAbsolutePath(),
+                        new File(targetLocation, children[i]).getAbsolutePath());
+            }
+        } else {
+
+            InputStream in = null;
+            OutputStream out = null;
+            try {
+                in = new FileInputStream(sourceLocation);
+                out = new FileOutputStream(targetLocation);
+                // Copy the bits from instream to outstream
+                byte[] buf = new byte[1024];
+                int len;
+                while ((len = in.read(buf)) > 0) {
+                    out.write(buf, 0, len);
+                }
+                in.close();
+                out.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 
     //compare file content
+    public void compare(String file1, String file2) {
+        File one = fileController(file1);
+        File two = fileController(file2);
+        InputStream in1 = null;
+        InputStream in2 = null;
+        try {
+            in1 = new FileInputStream(one);
+            in2 = new FileInputStream(two);
+            int r;
+            while ((r = in1.read()) != -1) {
+                if (in2.read() != r) {
+                    System.out.println("Files differs");
+                    return;
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Error, file doesn`t exist" + e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("files are similar");
+
+    }
 
     //show tree
 

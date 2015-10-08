@@ -64,6 +64,12 @@ public class CommandFinder {
         if (command.equals("touch")) {
             commandStarter.runTouchCommand(new TouchCommand(fileHelper, atrib1));
         }
+        if (command.equals("copy")) {
+            commandStarter.runCopyCommand(new CopyCommand(fileHelper, atrib1, atrib2));
+        }
+        if (command.equals("compare") || command.equals("fc")) {
+            commandStarter.equals(new CompareCommand(fileHelper, atrib1, atrib2));
+        }
 
     }
 
