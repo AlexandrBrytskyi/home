@@ -133,7 +133,7 @@ public class FileHelper {
                     return location;
                 }
             } else {
-                File newPath = new File(location + atribute);
+                File newPath = new File(location +"/"+ atribute);
                 if (newPath.exists() && newPath.isDirectory()) {
                     location = newPath;
                     return location;
@@ -148,7 +148,7 @@ public class FileHelper {
     // realisation of FindCommand
     public void find(String objtosearch, String atr2) {
         if (objtosearch != null) {
-            if (atr2.equals(null)) {
+            if (atr2 == null) {
                 new MyFileSearch(objtosearch, currentLocation.getAbsolutePath());
             } else {
                 if (locationController(atr2) != null) {
@@ -210,7 +210,7 @@ public class FileHelper {
                 return location;
             }
         } else {
-            File newPath = new File(location + atribute);
+            File newPath = new File(location +"/" + atribute);
             if (newPath.exists() && newPath.isFile()) {
                 location = newPath;
                 return location;
@@ -235,7 +235,7 @@ public class FileHelper {
     //realisation of rd command
     public void rd(String path) {
         File curr = locationController(path);
-        if (curr != null && curr.canExecute()) {
+        if (curr != null) {
             curr.delete();
         } else {
             System.out.println("Directory doesn`t exist or cant delete");
@@ -249,7 +249,7 @@ public class FileHelper {
             System.out.println("cant make");
             return;
         }
-        File newDirec = new File(currentLocation + name);
+        File newDirec = new File(currentLocation + "/" + name);
         if (newDirec.mkdir()) {
             System.out.println("success");
         } else {
@@ -259,7 +259,7 @@ public class FileHelper {
 
     //realisation touch
     public void touch(String name) {
-        File newFile = new File(currentLocation + name);
+        File newFile = new File(currentLocation + "/" + name);
         try {
             newFile.createNewFile();
             System.out.println("success");
@@ -268,6 +268,13 @@ public class FileHelper {
             e.printStackTrace();
         }
     }
+
+
+    //copy file  copy
+
+    //compare file content
+
+    //show tree
 
 
 }
