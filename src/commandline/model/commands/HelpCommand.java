@@ -7,15 +7,15 @@ import commandline.controller.FileHelper;
  */
 public class HelpCommand implements Command {
     FileHelper helper;
-    String command;
+    String atribute;
 
-    public HelpCommand(FileHelper helper, String command) {
+    public HelpCommand(FileHelper helper, String atribute) {
         this.helper = helper;
-        this.command = command;
+        this.atribute  = atribute;
     }
 
     @Override
     public void execute() {
-        helper .showHelp(command);
+        helper .showHelp(atribute);
     }
 }
