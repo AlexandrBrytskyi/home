@@ -1,0 +1,4 @@
+class=reflection.Man
+age=23
+name=Yuriy
+date=Mon Oct 12 19:13:24 EEST 2015
